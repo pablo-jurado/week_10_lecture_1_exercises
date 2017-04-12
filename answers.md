@@ -104,15 +104,15 @@ B. Only the variable assignment
 
 # short answer
 
-####(1) Describe a closure in JavaScript.
+#### (1) Describe a closure in JavaScript.
 We use Closures to encapsulate data. We accomplish this nesting functions.
 Our inner function will have access to the outer function's variables,
 but we wont have access to those variables from the global scope.
 
-####(2) Returning an inner function does not call the function when the outer function is called. How can this be resolved?
+#### (2) Returning an inner function does not call the function when the outer function is called. How can this be resolved?
 
 
-####(3) In the example below, why does the global variable get reassigned?
+#### (3) In the example below, why does the global variable get reassigned?
 ```
 var reassignmentExample = "Global variable";
 
@@ -129,11 +129,11 @@ testAssignment(); // Logs: Local variable
 console.log(reassignmentExample); // Logs: Local variable (the global variable is reassigned)
 ```
 
-####(4) When would it be necessary to store the value of this in a variable?
+#### (4) When would it be necessary to store the value of this in a variable?
 
-####(5) Describe the difference between function scoping and block scoping.
+#### (5) Describe the difference between function scoping and block scoping.
 
-####(6) In this example, why does logging 'hoistedVar' return 'undefined'?
+#### (6) In this example, why does logging 'hoistedVar' return 'undefined'?
 ```
 function hoistingExample() {
   console.log(hoistedVar);
