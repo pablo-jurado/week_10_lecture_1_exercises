@@ -113,7 +113,8 @@ but we wont have access to those variables from the global scope.
 
 
 ####(3) In the example below, why does the global variable get reassigned?
-```var reassignmentExample = "Global variable";
+```
+var reassignmentExample = "Global variable";
 
 function testAssignment() {
   reassignmentExample = "Local variable";
@@ -133,7 +134,9 @@ console.log(reassignmentExample); // Logs: Local variable (the global variable i
 ####(5) Describe the difference between function scoping and block scoping.
 
 ####(6) In this example, why does logging 'hoistedVar' return 'undefined'?
-```function hoistingExample() {
+```
+function hoistingExample() {
   console.log(hoistedVar);
   var hoistedVar = "Hoist me!";
-}```
+}
+```
