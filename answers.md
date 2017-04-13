@@ -54,7 +54,7 @@ C. The window.
 
 6.this is the value of the first argument in:
 
-A. .call(), .apply(), and .bind().
+***answer A. .call(), .apply(), and .bind().***
 
 B. .call() and .apply().
 
@@ -110,9 +110,11 @@ Our inner function will have access to the outer function's variables,
 but we wont have access to those variables from the global scope.
 
 #### (2) Returning an inner function does not call the function when the outer function is called. How can this be resolved?
-
+We can return a self-invoking function.
 
 #### (3) In the example below, why does the global variable get reassigned?
+Because we have access to a global variable from any other scope.
+
 ```
 var reassignmentExample = "Global variable";
 
@@ -130,10 +132,14 @@ console.log(reassignmentExample); // Logs: Local variable (the global variable i
 ```
 
 #### (4) When would it be necessary to store the value of this in a variable?
+If we want 'this' to refer to the outer function invocation context. The value needs to be stored into a variable in the scope of the inner function.
 
 #### (5) Describe the difference between function scoping and block scoping.
+if we create a variable inside of a function (function scope) we can not access that variable if we are outside of that function,
+but if we create a variable inside of a if statement or a for loop (block scope) we can access that variable from outside the scope.
 
 #### (6) In this example, why does logging 'hoistedVar' return 'undefined'?
+This is because only the declaration (var hoistedVar) is hoisted to the top, not the initialization (= "Hoist me!").
 ```
 function hoistingExample() {
   console.log(hoistedVar);
